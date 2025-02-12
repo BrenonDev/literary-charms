@@ -9,16 +9,43 @@
     --pink-base: #9547A5;
     --pink-dark: #7D298A;
     --pink-low: #3F0F41;
+
     --blue-light: #73B6D2;
     --blue-base: #358BB9;
     --blue-mid: #2374A4;
     --blue-dark: #144A72;
     --blue-low: #08233C;
+
     --shape-stroke: #002347;
     --shape-hover: #001933;
     --shape-base: #000F1F;
     --shape-background: #00050A;
+
     --text-title: #F8FBFB;
     --text-body: #E2E7E9;
     --text-label: #BAC6C9;
+
+    --font-family-raleway: "Raleway", serif;
+    --font-family-roboto-mono: "Roboto Mono", monospace;
+
+    --title-lg: 700 3rem/auto var(--font-family-raleway);
+    --title-md: 700 2.5rem/auto var(--font-family-raleway);
+    --title-sm: 700 2rem/auto var(--font-family-raleway);
+    --title-xs: 700 1rem/auto var(--font-family-raleway);
+
+    --subtitle: 500 2rem/2 var(--font-family-raleway);
+
+    --body-lg-regular: 400 1.25rem/1.4 var(--font-family-raleway);
+    --body-md-regular: 400 1rem/1.4 var(--font-family-raleway);
+    --body-sm-regular: 400 .875rem/1.4 var(--font-family-raleway);
+    --body-xs-regular: 400 .75rem/1.4 var(--font-family-raleway);
+
+    --body-lg-bold: 700 1.25rem/1.4 var(--font-family-raleway);
+    --body-md-bold: 700 1rem/1.4 var(--font-family-raleway);
+    --body-sm-bold: 700 .875rem/1.4 var(--font-family-raleway);
+    --body-xs-bold: 700 .75rem/1.4 var(--font-family-raleway);
+
+    --button: 700 .875rem/auto var(--font-family-raleway);
+    --link: 500 .875rem/auto var(--font-family-raleway);
+    --tag: 700 .625rem/auto var(--font-family-raleway);
 }
