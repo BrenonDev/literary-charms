@@ -2,6 +2,14 @@
     margin-inline: auto;
 }
 
+.mobile-only {
+    display: initial;
+}
+
+.desktop-only {
+    display: none;
+}
+
 .flex {
     display: flex;
 }
@@ -20,6 +28,10 @@
 
 .gap-1\.25 {
     gap: 1.25rem;
+}
+
+.gap-1\.5 {
+    gap: 1.5rem;
 }
 
 .gap-2 {
@@ -44,4 +56,14 @@
 
 .column {
     flex-direction: column;
+}
+
+@media (width >= 32em) {
+    & .mobile-only {
+        display: none;
+    }
+
+    & .desktop-only {
+        display: initial;
+    }
 }
