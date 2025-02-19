@@ -1,0 +1,47 @@
+header {
+    & nav {
+        padding-top: 1.25rem;
+        align-items: start;
+
+        & #logo-top img {
+            height: 3rem;
+        }
+    
+        & .button {
+            font: var(--button);
+            color: var(--text-title);
+            padding: .75rem 1.25rem;
+            background-color: var(--pink-dark);
+            border-radius: .5rem;
+            overflow: hidden;
+            z-index: 1;
+            position: relative;
+    
+            & .background-hover {
+                position: absolute;
+                width: .0625rem;
+                height: .0625rem;
+                background-color: var(--pink-base);
+                border-radius: 50%;
+                top: 50%;
+                left: 50%;
+                z-index: -1;
+                filter: opacity(0);
+                transition: transform 500ms, filter 500ms;
+            }
+    
+            &:hover .background-hover {
+                transform: scale(10000%);
+                filter: opacity(1);
+            }
+        }
+    }
+
+    @media (width >= 45rem) {
+        padding-top: 3rem;
+
+        & #logo-top img {
+            height: 3.625rem;
+        }
+    }
+}

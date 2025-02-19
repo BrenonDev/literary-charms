@@ -1,5 +1,7 @@
 .container {
     margin-inline: auto;
+    padding-inline: 1.25rem;
+    max-width: 75rem;
 }
 
 .mobile-only {
@@ -38,6 +40,10 @@
     gap: 2rem;
 }
 
+.gap-3 {
+    gap: 3rem;
+}
+
 .gap-3\.5 {
     gap: 3.5rem;
 }
@@ -58,12 +64,16 @@
     flex-direction: column;
 }
 
-@media (width >= 32em) {
-    & .mobile-only {
+@media (width >= 45em) {
+    .container {
+        padding-inline: 3rem;
+    }
+
+    .mobile-only {
         display: none;
     }
 
-    & .desktop-only {
+    .desktop-only {
         display: initial;
     }
 }

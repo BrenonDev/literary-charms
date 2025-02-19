@@ -28,10 +28,11 @@
     --font-family-raleway: "Raleway", serif;
     --font-family-roboto-mono: "Roboto Mono", monospace;
 
-    --title-lg: 700 3rem/normal var(--font-family-raleway);
-    --title-md: 700 2.5rem/normal var(--font-family-raleway);
-    --title-sm: 700 2rem/normal var(--font-family-raleway);
-    --title-xs: 700 1rem/normal var(--font-family-raleway);
+    --title-xl: 700 3rem/normal var(--font-family-raleway); /*lg*/
+    --title-lg: 700 2.5rem/normal var(--font-family-raleway); /*md*/
+    --title-md: 700 2rem/normal var(--font-family-raleway); /*sm*/
+    --title-sm: 700 1.75rem/normal var(--font-family-raleway); /*new*/
+    --title-xs: 700 1rem/normal var(--font-family-raleway); /*xs*/
 
     --subtitle: 500 2rem/2 var(--font-family-raleway);
 
@@ -48,12 +49,6 @@
     --button: 700 .875rem/normal var(--font-family-raleway);
     --link: 500 .875rem/normal var(--font-family-raleway);
     --tag: 700 .625rem/normal var(--font-family-raleway);
-
-    --padding-xs: .5rem;
-    --padding-sm: .75rem;
-    --padding-md: 1.25rem;
-    --padding-lg: 1.75rem;
-    --padding-xl: 2rem;
 }
 
 body {

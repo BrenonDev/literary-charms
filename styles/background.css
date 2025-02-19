@@ -1,0 +1,11 @@
+.background {
+    background-image: url(../assets/images/hero-background.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 60rem;
+    height: 70rem;
+
+    @media (width >= 45em) {
+        background-size: 100rem;
+    }
+}
