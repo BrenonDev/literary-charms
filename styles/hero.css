@@ -3,11 +3,11 @@
         padding: var(--padding-md);
         align-items: start;
 
-        & #logo img {
+        & #logo-top img {
             height: 3rem;
         }
 
-        & #button {
+        & .button {
             font: var(--button);
             color: var(--text-title);
             padding: var(--padding-sm) var(--padding-md);
@@ -17,7 +17,7 @@
             z-index: 1;
             position: relative;
     
-            & #background-hover {
+            & .background-hover {
                 position: absolute;
                 width: .0625rem;
                 height: .0625rem;
@@ -30,7 +30,7 @@
                 transition: transform 500ms, filter 500ms;
             }
     
-            &:hover #background-hover {
+            &:hover .background-hover {
                 transform: scale(10000%);
                 filter: opacity(1);
             }
@@ -41,7 +41,7 @@
         & nav {
             align-items: center;
 
-            & #logo img {
+            & #logo-top img {
                 height: 3.625rem;
             }
         }
