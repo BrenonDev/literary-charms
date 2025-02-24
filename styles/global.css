@@ -34,7 +34,8 @@
     --title-sm: 700 1.75rem/normal var(--font-family-raleway); /*new*/
     --title-xs: 700 1rem/normal var(--font-family-raleway); /*xs*/
 
-    --subtitle: 500 2rem/2 var(--font-family-raleway);
+    --subtitle-lg: 500 1.7rem/2 var(--font-family-raleway);
+    --subtitle-md: 500 1rem/2 var(--font-family-raleway);
 
     --body-lg-regular: 400 1.25rem/1.4 var(--font-family-raleway);
     --body-md-regular: 400 1rem/1.4 var(--font-family-raleway);

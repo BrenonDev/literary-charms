@@ -1,7 +1,7 @@
 .container {
     margin-inline: auto;
     padding-inline: 1.25rem;
-    max-width: 75rem;
+    max-width: 77.5rem;
 }
 
 .mobile-only {
@@ -48,11 +48,23 @@
     gap: 3.5rem;
 }
 
-.items-center {
+.align-center {
     align-items: center;
 }
 
-.space-between {
+.align-start {
+    align-items: flex-start;
+}
+
+.align-end {
+    align-items: flex-end;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-space-between {
     justify-content: space-between;
 }
 
