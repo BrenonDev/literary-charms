@@ -1,6 +1,6 @@
 #hero {
     margin-top: 3rem;
-    gap: 15rem;
+    gap: 10rem;
     
     & #title {
         & h1 {
@@ -28,8 +28,6 @@
         text-align: center;
         max-width: 71rem;
 
-        height: 90rem;
-
         & span {
             opacity: .5;
             transition: opacity 500ms ease;
@@ -41,7 +39,7 @@
         }
         
         & .img {
-            height: 10rem;
+            height: 15rem;
             
             & img {
                 width: 2.5rem;

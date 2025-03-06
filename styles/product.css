@@ -1,0 +1,182 @@
+#product {
+    margin-top: 7rem;
+
+    & div:nth-child(1) {
+        text-align: center;
+
+        & h2 {
+            font: var(--title-sm);
+            color: var(--text-title);
+
+            & img {
+                width: 1.25rem;
+            }
+
+            & span {
+                padding-inline: .75rem;
+            }
+        }
+
+        & p {
+            font: var(--body-sm-regular);
+            color: var(--text-body);
+            text-align: center;
+        }
+    }
+
+    & div:nth-child(2) {
+        position: relative;
+        margin-inline: auto;
+        font: var(--body-xs-regular);
+        color: var(--text-title);
+        width: 100%;
+        aspect-ratio: 5 / 4;
+
+        & * {
+            position: absolute;
+            transition: transform 800ms 200ms ease;
+        }
+
+        & #book {
+            z-index: 2;
+            width: 42%;
+            top: 16%;
+            left: 27%;
+            z-index: 3;
+        }
+
+        & #bookmark-1 {
+            width: 19%;
+            top: 18%;
+            left: 50%;
+            z-index: 2;
+        }
+
+        & #bookmark-2 {
+            width: 19%;
+            top: 18%;
+            left: 50%;
+            z-index: 1;
+        }
+
+        & #pin {
+            width: 20%;
+            top: 50%;
+            left: 32%;
+            z-index: 1;
+        }
+
+        & #text-1 {
+            width: 35%;
+            height: 7%;
+            top: 20%;
+            left: 32%;
+            z-index: 1;
+        }
+
+        & #arrow-1 {
+            width: 16%;
+            top: 22%;
+            left: 32%;
+            z-index: 1;
+        }
+
+        & #text-2 {
+            width: 35%;
+            height: 7%;
+            top: 35%;
+            left: 32%;
+            z-index: 1;
+        }
+
+        & #arrow-2 {
+            width: 9%;
+            top: 37%;
+            left: 32%;
+            z-index: 1;
+        }
+
+        & #text-3 {
+            width: 35%;
+            height: 7%;
+            top: 72%;
+            left: 32%;
+            z-index: 1;
+        }
+
+        & #arrow-3 {
+            width: 13%;
+            top: 56%;
+            left: 32%;
+            z-index: 1;
+        }
+
+        &:hover {
+            & #bookmark-1 {
+                transform: rotate(12deg) translate(55%, -25%);
+            }
+
+            & #bookmark-2 {
+                transform: rotate(22deg) translate(115%, -18%);
+            }
+
+            & #pin {
+                transform: rotate(-8deg) translate(-90%, 40%);
+            }
+
+            & #text-1 {
+                transform: translate(-75%, -170%);
+            }
+
+            & #arrow-1 {
+                transform: translate(-110%, -230%);
+            }
+
+            & #text-2 {
+                transform: translate(-75%, 250%);
+            }
+
+            & #arrow-2 {
+                transform: translate(-220%, 150%);
+            }
+
+            & #text-3 {
+                transform: translate(95%, 330%);
+            }
+
+            & #arrow-3 {
+                transform: translate(320%, 135%);
+            }
+        }
+    }
+
+    @media (width >= 45em) {
+        & div:nth-child(1) {
+            & h2 {
+                font: var(--title-md);
+                color: var(--text-title);
+            }
+    
+            & p {
+                font: var(--body-md-regular);
+                color: var(--text-body);
+            }
+        }
+
+        & div:nth-child(2) {
+            font: var(--body-md-regular);
+        }
+    }
+
+    @media (width < 27em) {
+        & div:nth-child(1) {
+            & h2 {
+                font-size: 1.5rem;
+            }
+        }
+
+        & div:nth-child(2) {
+            font-size: .625rem;
+        }
+    }
+}
