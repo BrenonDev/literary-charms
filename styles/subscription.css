@@ -1,0 +1,111 @@
+#subscription {
+
+    & h2 {
+        font: var(--title-sm);
+        color: var(--text-title);
+        text-align: center;
+    }
+
+    & .cards {
+        /* width: 18rem; */
+        /* margin-inline: auto; */
+        /* overflow-x: visible;
+        flex: none; */
+
+        & .card {
+            background-color: var(--shape-base);
+            padding: 2rem;
+            width: 18rem;
+            height: 26rem;
+            border: 1px solid var(--shape-stroke);
+            border-radius: 1.5rem;
+            position: relative;
+
+            & > img, .tag {
+                position: absolute;
+                opacity: 0;
+            }
+
+            &.card:nth-child(1), &.card:nth-child(3) {
+                & .header h3 {
+                    color: var(--blue-light);
+                }
+
+                & .details .button {
+                    background-color: var(--blue-dark);
+                }
+            }
+
+            &.card:nth-child(2) {
+                & .header h3 {
+                    color: var(--pink-light);
+                }
+
+                & .details .button {
+                    background-color: var(--pink-dark);
+                }
+            }
+
+            & .header {
+                & h3 {
+                    font: var(--title-xs);
+                }
+
+                & p:nth-child(2) {
+                    font: var(--title-lg);
+                    color: var(--text-title);
+                    margin-block: 1.5rem .5rem;
+
+                    & span {
+                        font: var(--title-xs);
+                    }
+                }
+
+                & p:nth-child(3) {
+                    font: var(--body-sm-regular);
+                    color: var(--text-label);
+                }
+            }
+
+            & .details {
+                display: flex;
+                flex-direction: column;
+                gap: .75rem;
+
+                & .item {
+                    font: var(--body-xs-regular);
+                    color: var(--text-body);
+                    display: flex;
+                    align-items: center;
+                    gap: .5rem;
+
+                    & img {
+                        width: .875rem;
+                    }
+                }
+
+                & .button {
+                    padding-block: .75rem;
+                    text-align: center;
+                    border-radius: .5rem;
+                    font: var(--button);
+                    color: var(--text-title);
+                    margin-top: 1.5rem;
+                }
+            }
+
+            &:hover {
+                background-color: var(--shape-hover);
+            }
+        }
+    }
+
+
+
+    @media (width >= 45em) {
+        & h2 {
+            font: var(--title-md);
+            
+        }
+    }
+}
