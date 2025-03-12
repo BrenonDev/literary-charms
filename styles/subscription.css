@@ -6,7 +6,7 @@
     }
 
     & .cards {
-        .wrapper {
+        & .wrapper {
             position: relative;
 
                 & .images {
@@ -17,7 +17,7 @@
                         position: absolute;
                     }
 
-                    .tag {
+                    & .tag {
                         background-color: var(--shape-stroke);
                         font: var(--tag);
                         color: var(--text-body);
@@ -34,7 +34,7 @@
                 padding: 2rem;
                 width: 18rem;
                 height: 26rem;
-                border: 1px solid var(--shape-stroke);
+                outline: 1px solid var(--shape-stroke);
                 border-radius: 1.5rem;
                 
                 &:hover {
@@ -94,6 +94,46 @@
                         margin-top: 1.5rem;
                     }
                 }
+            }
+        }
+    }
+
+    @media (width < 64em) {
+        & .mobile-only {
+            display: initial;
+        }
+
+        & .desktop-only {
+            display: none;
+        }
+
+        --padding-inline: calc((100vw - 18rem) / 2);
+        padding-inline: var(--padding-inline);
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+
+        & h2 {
+            position: absolute;
+            width: 18rem;
+        }
+
+        & .cards {
+            margin-top: 8rem;
+
+            & .wrapper {
+                scroll-snap-align: center;
+            }
+
+            & .scroll-link {
+                border-radius: 1.5rem;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+            }
+
+            & .padding-right {
+                padding-right: calc(var(--padding-inline) - 1rem);
             }
         }
     }
@@ -193,7 +233,7 @@
                         &:hover {
                             z-index: 3;
 
-                            .images {
+                            & .images {
                                 & img:nth-child(1) {
                                     transform: translate(-2rem, .5rem) rotate(25deg);
                                 }
@@ -203,7 +243,7 @@
                                 }
                             }
                             
-                            .card {
+                            & .card {
                                 transform: translateY(-2%);
                                 filter: drop-shadow(0 0 2rem #368cba33);
                             }

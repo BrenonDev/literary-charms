@@ -52,6 +52,10 @@
     --tag: 700 .625rem/normal var(--font-family-raleway);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: var(--shape-background);
 }
