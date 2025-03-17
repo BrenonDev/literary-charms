@@ -1,6 +1,4 @@
 #product {
-    margin-top: 7rem;
-
     & div:nth-child(1) {
         text-align: center;
 

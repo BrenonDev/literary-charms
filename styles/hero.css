@@ -39,7 +39,7 @@
         }
         
         & .img {
-            height: 15rem;
+            height: 5rem;
             
             & img {
                 width: 2.5rem;
@@ -127,7 +127,7 @@
             font: var(--subtitle-lg);
 
             & .img {
-                height: 15rem;
+                height: 5rem;
 
                 & img {
                     width: 5rem;

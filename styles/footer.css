@@ -1,13 +1,13 @@
 footer {
     & nav {
+        padding-bottom: 2.5rem;
+
         & .top-left {
             width: 100%;
             max-width: 20rem;
 
             & #logo-bottom {
                 display: block;
-                padding-bottom: .75rem;
-                border-bottom: 1px solid var(--shape-stroke);
                 margin-inline: auto;
 
                 & img {
@@ -16,7 +16,32 @@ footer {
             }
 
             & .social-links {
+                padding-top: .75rem;
+                border-top: 1px solid var(--shape-stroke);
 
+                & a {
+                    width: 2.5rem;
+                    height: 2.5rem;
+                    border-radius: 50%;
+                    transition: background-color 400ms ease;
+
+                    & svg {
+                        width: 1.5rem;
+                        height: 1.5rem;
+                        
+                        & path {
+                            transition: fill 400ms ease;
+                        }
+                   }
+
+                   &:hover {
+                        background-color: var(--shape-stroke);
+                        
+                        & svg path {
+                            fill: var(--text-body);
+                        }
+                   }
+                }
             }
         }
 
@@ -29,11 +54,17 @@ footer {
                 & h3 {
                     font: var(--title-xs);
                     color: var(--text-body);
+                    margin-bottom: .5rem;
                 }
 
                 & a {
                     font: var(--link);
                     color: var(--blue-light);
+                    transition: color 400ms ease;
+
+                    &:hover {
+                        color: var(--text-body);
+                    }
                 }
             }
 
@@ -43,11 +74,17 @@ footer {
                 & h3 {
                     font: var(--title-xs);
                     color: var(--text-body);
+                    margin-bottom: .5rem;
                 }
 
                 & a {
                     font: var(--link);
                     color: var(--blue-light);
+                    transition: color 400ms ease;
+
+                    &:hover {
+                        color: var(--text-body);
+                    }
                 }
             }
         }
@@ -56,28 +93,19 @@ footer {
     @media (width >= 45em) {
         & nav {
             justify-content: space-between !important;
+            padding-bottom: 7rem;
 
             & .top-left {
                 width: 16.5rem;
+
                 & #logo-bottom img {
                     width: 16.5rem;
-                }
-    
-                & .social-links {
-    
                 }
             }
     
             & .bottom-right {
                 width: initial;
-
-                & .contents {
-    
-                }
-    
-                & .help {
-    
-                }
+                gap: 3.5rem;
             }
         }
     }
