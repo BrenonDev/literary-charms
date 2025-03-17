@@ -27,6 +27,7 @@
         color: var(--text-body);
         text-align: center;
         max-width: 71rem;
+        padding-block: 12rem 5rem;
 
         & span {
             opacity: .5;
@@ -75,18 +76,18 @@
                 }
 
                 &:nth-child(2) {
-                    transition-delay: 1s;
+                    transition-delay: 750ms;
 
                     & strong {
-                        transition-delay: 1s;
+                        transition-delay: 750ms;
                     }
                 }
 
                 &:nth-child(3) {
-                    transition-delay: 2s;
+                    transition-delay: 1.5s;
 
                     & strong {
-                        transition-delay: 2s;
+                        transition-delay: 1.5s;
                     }
                 }
             }
@@ -95,11 +96,11 @@
                 scale: 1;
 
                 &#img-2 {
-                    transition-delay: 1s, 0s;
+                    transition-delay: 750ms, 0s;
                 }
     
                 &#img-3 {
-                    transition-delay: 2s, 0s;
+                    transition-delay: 1.5s, 0s;
                 }
             }
         }

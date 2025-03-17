@@ -1,6 +1,9 @@
 #product {
+    padding-block: 5rem;
+
     & div:nth-child(1) {
         text-align: center;
+        margin-bottom: 3rem;
 
         & h2 {
             font: var(--title-sm);
@@ -149,6 +152,8 @@
     }
 
     @media (width >= 45em) {
+        padding-block: 10rem;
+
         & div:nth-child(1) {
             & h2 {
                 font: var(--title-md);

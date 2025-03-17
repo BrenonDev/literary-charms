@@ -1,4 +1,6 @@
 #subscription {
+    padding-block: 5rem;
+
     & h2 {
         font: var(--title-sm);
         color: var(--text-title);
@@ -132,6 +134,8 @@
     }
 
     @media (width >= 64em) {
+        padding-block: 10rem;
+
         & h2 {
             font: var(--title-md);
         }

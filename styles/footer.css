@@ -1,4 +1,6 @@
 footer {
+    margin-top: 10rem;
+
     & nav {
         padding-bottom: 2.5rem;
 
@@ -91,6 +93,8 @@ footer {
     }
 
     @media (width >= 45em) {
+        margin-top: 15rem;
+
         & nav {
             justify-content: space-between !important;
             padding-bottom: 7rem;
