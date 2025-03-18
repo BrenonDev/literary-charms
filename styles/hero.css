@@ -45,7 +45,7 @@
             & img {
                 width: 2.5rem;
                 scale: 0;
-                transition: scale 300ms ease, transform 300ms ease;
+                transition: scale 300ms 750ms ease, transform 300ms 750ms ease;
                 
                 &:hover {
                     transform: rotate(12deg);
@@ -67,27 +67,27 @@
         
         &.move { /*:hover, &:focus, &:focus-within*/
             & span {
-                transition: opacity 300ms linear;
+                transition: opacity 300ms 750ms linear;
                 opacity: 1;
 
                 & strong {
-                    transition: color 300ms linear;
+                    transition: color 300ms 750ms linear;
                     color: var(--blue-light);
                 }
 
                 &:nth-child(2) {
-                    transition-delay: 750ms;
-
-                    & strong {
-                        transition-delay: 750ms;
-                    }
-                }
-
-                &:nth-child(3) {
                     transition-delay: 1.5s;
 
                     & strong {
                         transition-delay: 1.5s;
+                    }
+                }
+
+                &:nth-child(3) {
+                    transition-delay: 2.25s;
+
+                    & strong {
+                        transition-delay: 2.25s;
                     }
                 }
             }
@@ -96,11 +96,11 @@
                 scale: 1;
 
                 &#img-2 {
-                    transition-delay: 750ms, 0s;
+                    transition-delay: 1.5s;
                 }
     
                 &#img-3 {
-                    transition-delay: 1.5s, 0s;
+                    transition-delay: 2.25s;
                 }
             }
         }
@@ -135,15 +135,5 @@
                 }
             }
         }
-    }
-}
-
-@keyframes reveal {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
     }
 }

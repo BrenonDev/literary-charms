@@ -210,7 +210,7 @@
                     }
                 }
 
-                transition: transform 500ms;
+                transition: transform 500ms 700ms;
 
                 & .images img {
                     transition: transform 500ms;
