@@ -112,7 +112,7 @@
             z-index: 1;
         }
 
-        &:hover, &:focus, &:focus-within {
+        &.move { /*:hover, &:focus, &:focus-within*/
             & #bookmark-1 {
                 transform: rotate(12deg) translate(55%, -25%);
             }

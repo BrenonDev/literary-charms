@@ -65,7 +65,7 @@
             }
         }
         
-        &:hover, &:focus, &:focus-within {
+        &.move { /*:hover, &:focus, &:focus-within*/
             & span {
                 transition: opacity 300ms linear;
                 opacity: 1;

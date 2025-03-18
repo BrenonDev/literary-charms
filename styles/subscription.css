@@ -220,7 +220,7 @@
                 }
             }
 
-            &:hover {
+            &.move { /*:hover*/
                 & .wrapper {    
                     &:nth-child(1) {
                         transform: translate(-150%, 15%) rotate(-8deg);
